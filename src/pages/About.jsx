@@ -78,7 +78,7 @@ export default function About() {
           >
             <AboutDesc
               subtitle="How To Play"
-              text="Play the Crypted Hoard by entering in the correct BIP 39 keyword for all the riddles. Once all the riddles have been solved the background image will change indicating the correct answers have been entered. Now enter the BIP 39 words into a Cardano wallet (ex. Eternl) in the same order and transfer the reward to your personal wallet."
+              text="First check to see if the hoard has been solved by clicking on the treasure chest. This will take you to a webpage where the contents of the wallet obtainable by solving the Hoard riddles is shown. If it appears that no one has taken the treasure, continue on! Play the Crypted Hoard by entering in the correct BIP 39 keyword for all the riddles. The background image will change and the treasure chest will open, indicating the correct answers have been entered. Now enter the BIP 39 words into a Cardano wallet (ex. Eternl) in the same order and transfer the reward to your personal wallet."
             />
             <AboutDesc
               subtitle="Legal"
