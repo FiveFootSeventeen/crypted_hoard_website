@@ -141,6 +141,14 @@ export default function Pool() {
               image="/images/pool/pixel_desert_island_sm.png"
             />
             <Hardware/>
+            <Reason
+              subtitle="Is my ADA safe?"
+              text="Yes, funds never leave your wallet at any time and stake pool operators do not have access to the funds staked to their pool."
+            />
+            <Reason
+              subtitle="How to Delegate?"
+              text="In the staking section of your wallet search for HOARD, hit delegate, confirm the transaction, and submit. There is a small fee to delegate and you must have at least 5 ADA in your wallet."
+            />
           </BreakGrid>
         </BreakGrid>
       </Paper>

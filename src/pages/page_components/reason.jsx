@@ -37,13 +37,14 @@ export default function Reason(props) {
             <Card
                 class="rpgui-container framed-custom-6"
             >
-                <Grid
-                container
-                nowrap
-                direction="row"
-                justifyContent="center"
-                alignItems="center"
-                >
+              <Grid
+              container
+              nowrap
+              direction="row"
+              justifyContent="center"
+              alignItems="center"
+              >
+                { props.image &&
                 <Grid 
                     item
                     md={2}
@@ -55,6 +56,7 @@ export default function Reason(props) {
                     }}
                     />
                 </Grid>
+                }
                 <Grid 
                     item
                     md={10}
@@ -66,7 +68,7 @@ export default function Reason(props) {
                       {props.text}
                     </Typography>
                 </Grid>
-                </Grid>
+              </Grid>
             </Card>
         </WidthGrid>
     );
