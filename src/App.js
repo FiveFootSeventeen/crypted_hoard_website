@@ -1,8 +1,8 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 import CssBaseline from '@mui/material/CssBaseline';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import {BrowserRouter as Router} from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 import DungeonFont from './static/fonts/DungeonFont.ttf'
 import useScript, { ScriptStatus } from '@charlietango/use-script'
@@ -12,7 +12,7 @@ import './rpg_ui/rpgui.css';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import Page from './Page';
-
+import pool_meta from './static/pool_meta.json';
 
 const theme = createTheme({
   palette: {
@@ -22,6 +22,9 @@ const theme = createTheme({
   },
   typography: {
     fontFamily: 'DungeonFont',
+    poolDesc: {
+      fontFamily: 'Adventurer',
+    },
     body: {
       fontSize: 20
     }

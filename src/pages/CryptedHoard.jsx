@@ -26,11 +26,11 @@ export default function CryptedHoard() {
         sx={{
           width: "80vw",
           minHeight: "90vh",
-          padding: "0 0 5vh 0",
+          padding: "0 0 5rem 0",
           display: "flex",
           justifyContent: "center",
           backgroundImage: bckImgLink,
-          backgroundSize: "300px"
+          backgroundSize: "240px"
         }}
       >
         <Riddles

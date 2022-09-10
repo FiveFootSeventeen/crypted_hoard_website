@@ -3,15 +3,27 @@ import React from 'react';
 import Button from '@mui/material/Button';
 import { styled } from '@mui/material/styles';
 
-const BootstrapButton = styled(Button)(({active}) => ({
+const BootstrapButton = styled(Button)(({active, theme}) => ({
+  [theme.breakpoints.up('xs')]: {
+    marginLeft: '0.5rem',
+    marginRight: '0.5rem',
+    fontSize: "1.5rem",
+  },
+  [theme.breakpoints.up('sm')]: {
+    marginLeft: '1.5rem',
+    marginRight: '1.5rem',
+    fontSize: "1.8rem",
+  },
+  [theme.breakpoints.up('md')]: {
+    marginLeft: '2rem',
+    marginRight: '2rem',
+    fontSize: "2.2rem",
+  },
   color: "white",
   boxShadow: 'none',
   textTransform: 'none',
-  fontSize: "1.5em",
   textDecoration: active ? 'underline' : '',
   borderRadius: 0,
-  marginLeft: '1rem',
-  marginRight: '1rem',
   fontFamily: [
     'DungeonFont',
   ].join(','),
@@ -42,16 +54,16 @@ const NavAction = (props) => {
         Hoard
       </BootstrapButton>
       <BootstrapButton
-        onClick={() => props.setCurrTab(1)}
-        active={props.currTab === 1}
-      >
-        Scrolls
-      </BootstrapButton>
-      <BootstrapButton
         onClick={() => props.setCurrTab(3)}
         active={props.currTab === 3}
       >
         Pool
+      </BootstrapButton>
+      <BootstrapButton
+        onClick={() => props.setCurrTab(1)}
+        active={props.currTab === 1}
+      >
+        Scrolls
       </BootstrapButton>
       <BootstrapButton
         onClick={() => props.setCurrTab(4)}

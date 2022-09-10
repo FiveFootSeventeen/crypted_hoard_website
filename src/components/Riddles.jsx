@@ -10,19 +10,19 @@ import riddles from '../static/riddles.json';
 
 const BreakGrid = styled(Grid)(({ theme }) => ({
   [theme.breakpoints.up('xs')]: {
-    margin: "2rem 1vh 0 1vh"
+    margin: "1rem 1vh 0 1vh"
   },
   [theme.breakpoints.up('sm')]: {
-    margin: "5vh 10vh 0 10vh"
+    margin: "1rem 10vh 0 10vh"
   },
   [theme.breakpoints.up('md')]: {
-    margin: "5vh 10vh 0 10vh"
+    margin: "1rem 10vh 0 10vh"
   },
   [theme.breakpoints.up('lg')]: {
-    margin: "5vh 20vh 0 20vh"
+    margin: "1rem 20vh 0 20vh"
   },
     [theme.breakpoints.up('xl')]: {
-    margin: "5vh 40vh 0 40vh"
+    margin: "1rem 40vh 0 40vh"
   }
 }));
 

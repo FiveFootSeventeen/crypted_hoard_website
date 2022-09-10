@@ -375,12 +375,13 @@
 .rpgui-container.framed-custom-6 {
   /* border */
   border-style: solid;
-  border-image-source: url("img/border-image-custom-6.png");
+  border-image-source: url("img/wood_planks_over_water.png");
   border-image-repeat: repeat;
-  border-image-slice: 24 fill;
-  border-image-width: 18px;
+  border-image-slice: 36 fill;
+  border-image-width: 30px;
   border-width: 15px;
-  padding: 12px;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  padding: 30px;
   /* internal border */
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -750,18 +751,18 @@ ul.rpgui-list-imp {
   text-align: center;
   /* padding */
   padding: 0 0 0 0;
-  margin: 7px 7px 17px 7px; }
+}
 
 /* default gui header2 */
 .rpgui-content h2 {
   /* color and border */
-  color: white;
-  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  color: black;
   /* center text */
   text-align: center;
   /* padding */
   padding: 0 0 0 0;
-  margin: 7px 7px 17px 7px; }
+  margin: 2px 2px 2px 2px !important;
+}
 
 /* default gui header3 */
 .rpgui-content h3 {
@@ -813,7 +814,8 @@ ul.rpgui-list-imp {
 
 /* default gui link */
 .rpgui-content a:hover {
-  text-decoration: underline; }
+  text-decoration: none; 
+}
 
 /* default gui label */
 .rpgui-content label {

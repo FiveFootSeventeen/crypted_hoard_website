@@ -6,7 +6,7 @@ import { styled } from '@mui/material/styles';
 import Toolbar from '@mui/material/Toolbar';
 
 
-const BootstrapButton = styled(Button)(({active}) => ({
+const BootstrapButton = styled(Button)({
   color: "white",
   boxShadow: 'none',
   textTransform: 'none',
@@ -14,24 +14,32 @@ const BootstrapButton = styled(Button)(({active}) => ({
   borderRadius: 0,
   marginLeft: '1rem',
   marginRight: '1rem',
+  textDecoration: 'none',
   fontFamily: [
     'DungeonFont',
   ].join(','),
+  '&:visited': {
+    color: "white",
+    textDecoration: 'none',
+  },
+  '&:link': {
+    color: "white",
+    textDecoration: 'none',
+  },
   '&:hover': {
+    color: "white",
+    textShadow: "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
     boxShadow: 'none',
-    backgroundColor: 'rgba(255,255,255,.25)',
-    borderColor: 'rgba(255,255,255,.25)',
-    textDecoration: active ? 'underline' : '',
+    textDecoration: 'none',
     borderRadius: 0,
   },
   '&:active': {
+    color: "white",
     boxShadow: 'none',
-    backgroundColor: 'rgba(255,255,255,.25)',
-    borderColor: 'rgba(255,255,255,.25)',
-    textDecoration: active ? 'underline' : '',
+    textDecoration: 'none',
     borderRadius: 0,
   },
-}));
+});
 
 
 const Footer = (props) => {
@@ -42,10 +50,10 @@ const Footer = (props) => {
         position="static"
       >
         <Toolbar>
-          <BootstrapButton>
+          <BootstrapButton target="_blank" href="https://twitter.com/CryptedHoard">
             Twitter
           </BootstrapButton>
-          <BootstrapButton>
+          <BootstrapButton target="_blank" href="https://www.youtube.com/channel/UCYN_DyBzoGvNbJgTdnJ9A3Q">
             Youtube
           </BootstrapButton>
           <BootstrapButton>

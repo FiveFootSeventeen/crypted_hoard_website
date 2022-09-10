@@ -1636,7 +1636,7 @@
     "prop-types" "^15.7.2"
     "react-is" "^17.0.2"
 
-"@mui/material@^5.0.4":
+"@mui/material@^5.0.1", "@mui/material@^5.0.4":
   "integrity" "sha512-075EXSBHoEYeFkE5WDtXyxfd+bNIQRvqlgiouukvMqLGta1EmLq9H6+ONYV4I0Luug8NvNyRocVyRwdjH0Ufmw=="
   "resolved" "https://registry.npmjs.org/@mui/material/-/material-5.0.4.tgz"
   "version" "5.0.4"
@@ -7959,6 +7959,11 @@
   "resolved" "https://registry.npmjs.org/ms/-/ms-2.1.2.tgz"
   "version" "2.1.2"
 
+"mui-image@^1.0.7":
+  "integrity" "sha512-U79TWMKMfMC1ZiGnv/M+SaVJeUpubEjXOdy7w53RsvidUAMZ+4nW+QmDG9yg5fgWeYy6YJgLHyI9BHSDw76iIg=="
+  "resolved" "https://registry.npmjs.org/mui-image/-/mui-image-1.0.7.tgz"
+  "version" "1.0.7"
+
 "multicast-dns-service-types@^1.1.0":
   "integrity" "sha1-iZ8R2WhuXgXLkbNdXw5jt3PPyQE="
   "resolved" "https://registry.npmjs.org/multicast-dns-service-types/-/multicast-dns-service-types-1.1.0.tgz"
@@ -9810,7 +9815,7 @@
     "loose-envify" "^1.4.0"
     "prop-types" "^15.6.2"
 
-"react@*", "react@^16.8.0 || ^17.0.0", "react@^17.0.2", "react@>= 16", "react@>=16.6.0", "react@>=16.8", "react@>=16.8.0", "react@17.0.2":
+"react@*", "react@^16.8.0 || ^17.0.0", "react@^17.0.2", "react@^17.0.2 || ^18.0.0", "react@>= 16", "react@>=16.6.0", "react@>=16.8", "react@>=16.8.0", "react@17.0.2":
   "integrity" "sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA=="
   "resolved" "https://registry.npmjs.org/react/-/react-17.0.2.tgz"
   "version" "17.0.2"
