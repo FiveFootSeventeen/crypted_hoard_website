@@ -118,7 +118,7 @@ export default function RiddleList(props) {
                             "imageRendering": "-o-crisp-edges",
                             // eslint-disable-next-line no-dupe-keys
                             "imageRendering": "pixelated",
-                            "cursor": `url(${cursorPoint}) 10 0, auto !important`,
+                            "cursor": `url(${cursorDefault}) 10 0, auto !important`,
                             "fontSize": "1.2rem"
                           }}
                         >

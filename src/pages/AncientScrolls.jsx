@@ -8,6 +8,8 @@ import Grid from '@mui/material/Grid';
 import { styled } from '@mui/material/styles';
 
 import backgroundImg from "../static/images/stone_limited.png";
+import animatedExample from "../static/images/animated_example.webp";
+import exampleImage1 from "../static/images/example_image_1.png";
 
 const BootstrapTypography = styled(Typography)({
   color: 'black',
@@ -137,7 +139,7 @@ export default function AncientScrolls() {
               >
                 <CardMedia
                   component="img"
-                  image="/images/animated_example.webp"
+                  image={animatedExample}
                   sx={{
                     transform: "scale(1)",
                     border: 7,
@@ -184,7 +186,7 @@ export default function AncientScrolls() {
               >
                 <CardMedia
                   component="img"
-                  image="/images/example_image_1.png"
+                  image={exampleImage1}
                   sx={{
                     transform: "scale(0.8)",
                     border: 7,
@@ -233,7 +235,7 @@ export default function AncientScrolls() {
               >
                 <CardMedia
                   component="img"
-                  image="/images/example_image_1.png"
+                  image={exampleImage1}
                   sx={{
                     transform: "scale(0.8)",
                     border: 7,
