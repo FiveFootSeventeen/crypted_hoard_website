@@ -4,14 +4,14 @@ import CssBaseline from '@mui/material/CssBaseline';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { BrowserRouter as Router } from 'react-router-dom';
 
-import DungeonFont from './static/fonts/DungeonFont.ttf'
+import DungeonFont from './static/fonts/DungeonFont.ttf';
+import Adventurer from './static/fonts/Adventurer.ttf';
 
 import './App.css';
 import './rpg_ui/rpgui.css';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import Page from './Page';
-import pool_meta from './static/pool_meta.json';
 
 const theme = createTheme({
   palette: {
@@ -37,6 +37,16 @@ const theme = createTheme({
           cursor: "url('./cursor/point.png') 10 0, auto !important"
         },
       },
+      styleOverrides: `
+        @font-face {
+          font-family: 'Adventurer';
+          font-style: normal;
+          font-display: swap;
+          font-weight: 400;
+          src: local('Adventurer'), url(${Adventurer}) format('truetype');
+          unicodeRange: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF;
+        }
+        `,
     },
   },
 });
