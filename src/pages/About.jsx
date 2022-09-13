@@ -6,6 +6,8 @@ import { styled } from '@mui/material/styles';
 
 import AboutDesc from './page_components/about_desc';
 
+import backgroundImg from "../static/images/brickwork.png";
+
 const BootstrapTypography = styled(Typography)({
   color: 'black',
   width: '100%',
@@ -37,7 +39,7 @@ export default function About() {
           display: "flex",
           justifyContent: "center",
           backgroundColor: "white",
-          backgroundImage: "url('./images/brickwork.png')",
+          backgroundImage: `url(${backgroundImg})`,
           backgroundSize: "240px"
         }}
       >

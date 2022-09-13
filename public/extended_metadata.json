@@ -1,29 +1,30 @@
 {
     "info": {
-        "url_png_icon_64x64": "http(s) url to pool icon; png format; not animated; max 40kb",
-        "url_png_logo": "http(s) url to pool logo; png format; not animated; max 50kb",
-        "location": "London, England",
+        "url_png_icon_64x64": "https://cryptedhoard.com/images/hoard_logo_64_64.png",
+        "url_png_logo": "https://cryptedhoard.com/images/hoard_logo.png",
+        "location": "Tennessee, USA",
         "social": {
-            "twitter_handle": "adapools_org",
-            "telegram_handle": "adapools_ops",
+            "twitter_handle": "CryptedHoard",
+            "telegram_handle": "",
             "facebook_handle": "",
-            "youtube_handle": "",
+            "youtube_handle": "UCYN_DyBzoGvNbJgTdnJ9A3Q",
             "twitch_handle": "",
             "discord_handle": "",
-            "github_handle": ""
+            "github_handle": "",
+            "email": "anodos@cryptedhoard.com"
         },
         "company": {
-            "name": "Company Name",
-            "addr": "Street, Number",
-            "city": "London",
-            "country": "England",
-            "company_id": "123456789",
-            "vat_id": "GB123456789"
+            "name": "The Crypted Hoard",
+            "addr": "",
+            "city": "",
+            "country": "",
+            "company_id": "",
+            "vat_id": ""
         },
         "about": {
-            "me": "...",
-            "server": "Raspberry Pi Hosted at my Home in London 100MB up/down, solar energy.",
-            "company": "..."
+            "me": "Anodos",
+            "server": "Bare metal enterprise-grade blade servers \ 8 Core \ 64GB ECC Memory | 8TB Raid 1 \ Hot swappable spare blades.",
+            "company": ""
         }
     }
 }

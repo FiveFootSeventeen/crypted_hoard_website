@@ -9,6 +9,8 @@ import { styled } from '@mui/material/styles';
 import Reason from './page_components/reason';
 import Hardware from './page_components/hardware';
 
+import backgroundImg from "../static/images/water_2.png";
+
 const Title = styled(Typography)(({ theme }) => ({
   marginTop: "1rem",
   marginBottom: "1rem",
@@ -57,7 +59,7 @@ export default function Pool() {
           padding: "0 0 5vh 0",
           display: "flex",
           justifyContent: "center",
-          backgroundImage: "url('./images/water_2.png')",
+          backgroundImage: `url(${backgroundImg})`,
           backgroundSize: "230px",
         }}
       >

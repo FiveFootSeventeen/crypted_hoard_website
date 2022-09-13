@@ -7,6 +7,8 @@ import CardMedia from '@mui/material/CardMedia';
 import Grid from '@mui/material/Grid';
 import { styled } from '@mui/material/styles';
 
+import backgroundImg from "../static/images/stone_limited.png";
+
 const BootstrapTypography = styled(Typography)({
   color: 'black',
   width: '100%',
@@ -75,7 +77,7 @@ export default function AncientScrolls() {
           display: "flex",
           justifyContent: "center",
           backgroundColor: "white",
-          backgroundImage: "url('./images/stone_limited.png')",
+          backgroundImage: `url(${backgroundImg})`,
           backgroundSize: "760px"
         }}
       >

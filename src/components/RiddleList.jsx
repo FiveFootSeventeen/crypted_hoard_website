@@ -13,6 +13,9 @@ import ComputeAnswers from './ComputeAnswers';
 import bip39 from '../static/bip39/english.json';
 import getRiddleList from '../util/getRiddleList';
 
+import cursorPoint from "../static/images/point.png";
+import cursorDefault from "../static/images/default.png";
+
 const CssTextField = styled(TextField)(() => ({
   "& label": {
     fontSize: "1.3rem",
@@ -31,7 +34,7 @@ const CssTextField = styled(TextField)(() => ({
   },
   // focused color for input with variant='outlined'
   "& .MuiOutlinedInput-root": {
-    cursor: "url('./cursor/point.png') 10 0, auto !important",
+    cursor: `url(${cursorPoint}) 10 0, auto !important`,
     "&.Mui-focused fieldset": {
       borderColor: "black",
       borderWidth: 7,
@@ -95,10 +98,10 @@ export default function RiddleList(props) {
                             paddingLeft: "0 !important",
                           },
                           '&:hover': {
-                            cursor: "url('./cursor/point.png') 10 0, auto !important",
+                            cursor: `url(${cursorPoint}) 10 0, auto !important`,
                           },
                           "& .MuiAutocomplete-option": {
-                            cursor: "url('./cursor/point.png') 10 0, auto !important",
+                            cursor: `url(${cursorPoint}) 10 0, auto !important`,
                           }
                         }
                       }}
@@ -115,7 +118,7 @@ export default function RiddleList(props) {
                             "imageRendering": "-o-crisp-edges",
                             // eslint-disable-next-line no-dupe-keys
                             "imageRendering": "pixelated",
-                            "cursor": "url('./cursor/default.png') 10 0, auto !important",
+                            "cursor": `url(${cursorPoint}) 10 0, auto !important`,
                             "fontSize": "1.2rem"
                           }}
                         >

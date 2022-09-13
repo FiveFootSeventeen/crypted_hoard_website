@@ -7,6 +7,8 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import DungeonFont from './static/fonts/DungeonFont.ttf';
 import Adventurer from './static/fonts/Adventurer.ttf';
 
+import cursorPoint from "../static/images/point.png";
+
 import "./index.css";
 import "./index.js";
 import './App.css';
@@ -36,7 +38,7 @@ const theme = createTheme({
         '@font-face': [DungeonFont],
         'color': 'white',
         'MuiAutocomplete-option': {
-          cursor: "url('./cursor/point.png') 10 0, auto !important"
+          cursor: `url(${cursorPoint}) 10 0, auto !important`
         },
       },
       styleOverrides: `
