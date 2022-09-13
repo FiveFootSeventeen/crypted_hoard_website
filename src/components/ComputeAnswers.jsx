@@ -1,4 +1,5 @@
 import CryptoJS from 'crypto-js';
+import ConsoleHelper from '../util/consoleHelper';
 
 export default function ComputeAnswers(ansDict, expected) {
   let ansStr = ""
@@ -9,7 +10,7 @@ export default function ComputeAnswers(ansDict, expected) {
     }
   }
 
-  console.log(`got: ${CryptoJS.SHA256(ansStr).toString(CryptoJS.enc.Hex)}\nexpected: ${expected}`)
+  ConsoleHelper(`got: ${CryptoJS.SHA256(ansStr).toString(CryptoJS.enc.Hex)}\nexpected: ${expected}`)
 
   return expected === CryptoJS.SHA256(ansStr).toString(CryptoJS.enc.Hex);
 }

@@ -47,7 +47,7 @@ export default function Reason(props) {
                 { props.image &&
                 <Grid 
                     item
-                    md={2}
+                    md={3}
                 >
                     <img 
                     src={props.image} 
@@ -59,7 +59,7 @@ export default function Reason(props) {
                 }
                 <Grid 
                     item
-                    md={10}
+                    md={9}
                 >
                     <Subtitle align="center">
                         <b>{props.subtitle}</b>
