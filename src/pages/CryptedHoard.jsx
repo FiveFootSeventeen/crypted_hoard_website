@@ -5,16 +5,19 @@ import Paper from '@mui/material/Paper';
 import SponsorDisplay from '../components/SponsorDisplay';
 import Riddles from '../components/Riddles';
 
+import goldCoins from "../static/images/tiled_gold_coins.png";
+import woodPlanks from "../static/images/wood_planks.png";
+
 export default function CryptedHoard() {
   const [open, setOpen] = useState(true);
   const [validAns, setValidAns] = useState(false);
-  const [bckImgLink, setBckImgLink] = useState("url('./images/wood_planks.png')");
+  const [bckImgLink, setBckImgLink] = useState(woodPlanks);
 
   useEffect(() => {
     if (validAns) {
-      setBckImgLink("url('./images/tiled_gold_coins.png')")
+      setBckImgLink(goldCoins)
     } else {
-      setBckImgLink("url('./images/wood_planks.png')")
+      setBckImgLink(woodPlanks)
     }
   }, [validAns])
 
@@ -29,7 +32,7 @@ export default function CryptedHoard() {
           padding: "0 0 5rem 0",
           display: "flex",
           justifyContent: "center",
-          backgroundImage: bckImgLink,
+          backgroundImage: `url(${bckImgLink})`,
           backgroundSize: "240px"
         }}
       >

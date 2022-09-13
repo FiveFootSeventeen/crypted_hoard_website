@@ -7,6 +7,8 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import DungeonFont from './static/fonts/DungeonFont.ttf';
 import Adventurer from './static/fonts/Adventurer.ttf';
 
+import "./index.css";
+import "./index.js";
 import './App.css';
 import './rpg_ui/rpgui.css';
 import NavBar from './components/NavBar';
@@ -58,10 +60,10 @@ function App() {
 
   useEffect(() => {
     const script = document.createElement('script');
-    
+
     script.src = './rpg_ui/rpgui.js';
     script.async = true;
-    
+
     document.body.appendChild(script);
   }, []);
 

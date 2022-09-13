@@ -313,12 +313,13 @@ export default function AncientScrolls() {
                 maxWidth: "30rem",
               }}
             >
-              <a href="http://www.google.com" target="_blank">
+              <a href="http://www.google.com" target="_blank" rel="noreferrer">
                 <img 
                   src={mintButton}
                   style={{
                     width: "100%"
                   }}
+                  alt="Ancient Scrolls Mint Button"
                 />
               </a>
             </button>

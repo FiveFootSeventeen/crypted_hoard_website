@@ -1,0 +1,19 @@
+{
+  "sha256sum": "4fa0a413701f55546e860cc3e0ac8e220307c9a1e7db5217767ee2aaafaf6ef0",
+  "wallet_addr": "addr1q9j68dum5wptkwsl734hgcyrev0rktauunnhtz5yrkqjrj4928m4csls97t274fg65ukts6kqz9c760dv3u2q9wsjxaqjs9c8l",
+  "riddles":
+    [
+      {"riddle": "I'm baby incididunt listicle lorem pitchfork. Affogato master cleanse quis mollit you probably haven't heard of them deep v ex tumblr wolf etsy taiyaki ethical.", "order": 1},
+      {"riddle": "Hammock intelligentsia seitan bushwick do stumptown meditation pok pok. Drinking vinegar pork belly hexagon bitters migas.", "order": 2},
+      {"riddle": "Quinoa fam vegan mixtape. Pug synth selvage, eiusmod kinfolk semiotics intelligentsia +1 cillum chia truffaut.", "order": 3},
+      {"riddle": "Laborum migas yes plz meh, pariatur synth lo-fi deserunt ut kinfolk YOLO. Drinking vinegar hoodie skateboard cloud bread narwhal, franzen kogi.", "order": 4},
+      {"riddle": "Vegan YOLO dreamcatcher jianbing man bun gochujang ut letterpress coloring book pour-over fit banjo id cliche enim.", "order": 5},
+      {"riddle": "Selfies single-origin coffee tilde mlkshk. Cray mumblecore franzen, hella sustainable vexillologist plaid roof party tilde minim big mood activated charcoal affogato vegan.", "order": 6},
+      {"riddle": "Occaecat sed 90's, single-origin coffee subway tile irure mumblecore pariatur reprehenderit.", "order": 7},
+      {"riddle": "Keffiyeh gastropub palo santo bruh intelligentsia est nulla aliqua minim 8-bit freegan. Keffiyeh wolf lorem tempor, incididunt heirloom flannel do dolore eiusmod XOXO authentic messenger bag dolor.", "order": 8},
+      {"riddle": "Bitters brunch wayfarers echo park, incididunt chicharrones shoreditch green juice hammock cornhole PBR&B. Deep v cold-pressed pug stumptown meggings.", "order": 9},
+      {"riddle": "Chartreuse chambray tilde, cornhole kitsch thundercats pickled cray. Hammock officia hexagon, vaporware nulla live-edge lyft yuccie nostrud vegan praxis cardigan sed magna tacos.", "order": 10},
+      {"riddle": "Kale chips taxidermy banh mi vexillologist adipisicing street art.", "order": 11},
+      {"riddle": "Aliquip wolf keffiyeh bicycle rights snackwave JOMO twee cronut elit. Exercitation gastropub cupidatat fit selfies synth church-key.", "order": 12}
+    ]
+}

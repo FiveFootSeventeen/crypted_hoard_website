@@ -5,8 +5,10 @@ import Typography from '@mui/material/Typography';
 import { styled } from '@mui/material/styles';
 
 import RiddleList from './RiddleList';
-import riddles from '../static/riddles.json';
+import getRiddleList from '../util/getRiddleList';
 
+import chestClosed from '../static/images/chest_closed_pixelated.png';
+import chestOpen from '../static/images/chest_open_pixelated.png';
 
 const BreakGrid = styled(Grid)(({ theme }) => ({
   [theme.breakpoints.up('xs')]: {
@@ -34,19 +36,24 @@ const BootstrapTypography = styled(Typography)({
 
 export default function Riddles(props) {
   const [open, setOpen] = useState(props.defaultOpen);
+  const [chestImg, setChestImg] = useState(chestClosed);
+  const [riddles, setRiddles] = useState({"wallet_addr": ""});
   const [addrLink, setAddrLink] = useState("https://pool.pm/" + riddles["wallet_addr"]);
-  const [chestLink, setChestLink] = useState("./images/chest_closed_pixelated.png");
   let validAns = props.validAns;
 
-  const handleClose = () => {
-    setOpen(false);
-  };
+  useEffect(()=>{
+    getRiddleList(setRiddles);
+  },[])
+
+  useEffect(()=>{
+    setAddrLink("https://pool.pm/" + riddles["wallet_addr"]);
+  },[riddles])
 
   useEffect(() => {
     if (validAns) {
-      setChestLink("./images/chest_open_pixelated.png");
+      setChestImg(chestOpen);
     } else {
-      setChestLink("./images/chest_closed_pixelated.png");
+      setChestImg(chestClosed);
     }
   }, [validAns])
 
@@ -62,10 +69,10 @@ export default function Riddles(props) {
       <BootstrapTypography class="rpgui-container framed-custom-3" align="center" variant="h1">
         The Crypted Hoard
       </BootstrapTypography>
-      <a href={addrLink} target="_blank">
+      <a href={addrLink} target="_blank" rel="noreferrer">
         <img 
-          src={chestLink}
-          alt="Crypted Hoard Chest" 
+          src={chestImg}
+          alt="Hoard Chest" 
           style={{
             width: "10rem",
           }}

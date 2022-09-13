@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import './static/fonts/Adventurer.ttf';
+import './static/fonts/DungeonFont.ttf';
 
 ReactDOM.render(
   <React.StrictMode>

@@ -54,6 +54,7 @@ export default function Reason(props) {
                     style={{
                         height: "7rem"
                     }}
+                    alt={props.subtitle + " image"}
                     />
                 </Grid>
                 }

@@ -18,7 +18,7 @@ function Page(props) {
   let location = useLocation();
   let currTab = props.currTab;
 
-  if (currTab == -1) {
+  if (currTab === -1) {
     switch (location['pathname']) {
       case "/":
         currTab = TabCryptedHoard;

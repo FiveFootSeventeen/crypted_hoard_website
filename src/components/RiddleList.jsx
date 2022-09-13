@@ -10,9 +10,8 @@ import Typography from '@mui/material/Typography';
 import { styled } from '@mui/system';
 
 import ComputeAnswers from './ComputeAnswers';
-import riddles from '../static/riddles.json';
 import bip39 from '../static/bip39/english.json';
-
+import getRiddleList from '../util/getRiddleList';
 
 const CssTextField = styled(TextField)(() => ({
   "& label": {
@@ -43,107 +42,116 @@ const CssTextField = styled(TextField)(() => ({
 
 export default function RiddleList(props) {
   const [answers, setAnswers] = useState({});
+  const [riddles, setRiddles] = useState({"sha256sum": "0xDEADBEEF", "riddles": []});
+  const [riddleList, setRiddleList] = useState([]);
   const setValidAns = props.setValidAns;
+
+  useEffect(()=>{
+    getRiddleList(setRiddles);
+  },[])
 
   useEffect(() => {
     setValidAns(ComputeAnswers(answers, riddles["sha256sum"]));
-  }, [answers, setValidAns])
+  }, [answers, setValidAns, riddles])
 
-  const riddleList = riddles["riddles"].map((riddle) =>
-      <Grid
-        item
-        sx={{
-          width: '80%'
-        }}
-      >
-        <Card
-          class="rpgui-container framed-custom-4"
-        >
+  useEffect(() => {
+    setRiddleList(riddles["riddles"].map((riddle) =>
           <Grid
-            container
-            direction="row"
-            justifyContent="space-evenly"
-            alignItems="center"
+            item
+            sx={{
+              width: '80%'
+            }}
           >
-            <Grid item
-              md={4}
-              xs={12}
-              style={{minWidth: "10rem"}}
+            <Card
+              class="rpgui-container framed-custom-4"
             >
-              <CardContent>
-                <Autocomplete
-                  sx={{
-                    width: '100%',
-                  }}
-                  autoHighlight
-                  disablePortal
-                  onChange={(event, newValue) => {
-                    setAnswers(prevAnswers => ({
-                      ...prevAnswers,
-                      [riddle['order']]: newValue
-                    }));
-                  }}
-                  ListboxProps={{
-                    sx: {
-                      "& li": { 
-                        paddingLeft: "0 !important",
-                      },
-                      '&:hover': {
-                        cursor: "url('./cursor/point.png') 10 0, auto !important",
-                      },
-                      "& .MuiAutocomplete-option": {
-                        cursor: "url('./cursor/point.png') 10 0, auto !important",
-                      }
-                    }
-                  }}
-                  PaperComponent={({ children }) => (
-                    <Paper
+              <Grid
+                container
+                direction="row"
+                justifyContent="space-evenly"
+                alignItems="center"
+              >
+                <Grid item
+                  md={4}
+                  xs={12}
+                  style={{minWidth: "10rem"}}
+                >
+                  <CardContent>
+                    <Autocomplete
                       sx={{
-                        // eslint-disable-next-line no-dupe-keys
-                        "imageRendering": "-webkit-optimize-contrast",
-                        // eslint-disable-next-line no-dupe-keys
-                        "imageRendering": "-webkit-crisp-edges",
-                        // eslint-disable-next-line no-dupe-keys
-                        "imageRendering": "-moz-crisp-edges",
-                        // eslint-disable-next-line no-dupe-keys
-                        "imageRendering": "-o-crisp-edges",
-                        // eslint-disable-next-line no-dupe-keys
-                        "imageRendering": "pixelated",
-                        "cursor": "url('./cursor/default.png') 10 0, auto !important",
-                        "fontSize": "1.2rem"
+                        width: '100%',
                       }}
-                    >
-                      <div
-                        class="rpgui-container framed-custom-1"
-                      >
-                        {children}
-                      </div>
-                    </Paper>
-                  )}
-                  id={`riddle-input-${riddle['order']}`}
-                  options={bip39}
-                  renderInput={(params) =>
-                    <CssTextField
-                      {...params}
-                      label={"Word " + riddle['order']}
+                      autoHighlight
+                      disablePortal
+                      onChange={(event, newValue) => {
+                        setAnswers(prevAnswers => ({
+                          ...prevAnswers,
+                          [riddle['order']]: newValue
+                        }));
+                      }}
+                      ListboxProps={{
+                        sx: {
+                          "& li": { 
+                            paddingLeft: "0 !important",
+                          },
+                          '&:hover': {
+                            cursor: "url('./cursor/point.png') 10 0, auto !important",
+                          },
+                          "& .MuiAutocomplete-option": {
+                            cursor: "url('./cursor/point.png') 10 0, auto !important",
+                          }
+                        }
+                      }}
+                      PaperComponent={({ children }) => (
+                        <Paper
+                          sx={{
+                            // eslint-disable-next-line no-dupe-keys
+                            "imageRendering": "-webkit-optimize-contrast",
+                            // eslint-disable-next-line no-dupe-keys
+                            "imageRendering": "-webkit-crisp-edges",
+                            // eslint-disable-next-line no-dupe-keys
+                            "imageRendering": "-moz-crisp-edges",
+                            // eslint-disable-next-line no-dupe-keys
+                            "imageRendering": "-o-crisp-edges",
+                            // eslint-disable-next-line no-dupe-keys
+                            "imageRendering": "pixelated",
+                            "cursor": "url('./cursor/default.png') 10 0, auto !important",
+                            "fontSize": "1.2rem"
+                          }}
+                        >
+                          <div
+                            class="rpgui-container framed-custom-1"
+                          >
+                            {children}
+                          </div>
+                        </Paper>
+                      )}
+                      id={`riddle-input-${riddle['order']}`}
+                      options={bip39}
+                      renderInput={(params) =>
+                        <CssTextField
+                          {...params}
+                          label={"Word " + riddle['order']}
+                        />
+                      }
                     />
-                  }
-                />
-              </CardContent>
-            </Grid>
-            <Grid
-              item
-              md={8}
-              xs={12}
-            >
-              <Typography variant="body" color="text.primary">
-                {riddle["riddle"]}
-              </Typography>
-            </Grid>
+                  </CardContent>
+                </Grid>
+                <Grid
+                  item
+                  md={8}
+                  xs={12}
+                >
+                  <Typography variant="body" color="text.primary">
+                    {riddle["riddle"]}
+                  </Typography>
+                </Grid>
+              </Grid>
+            </Card>
           </Grid>
-        </Card>
-      </Grid>
-  )
+      )
+    )
+  }, [riddles])
 
 
   return (

@@ -1,6 +1,5 @@
 import React from 'react';
 import Paper from '@mui/material/Paper';
-import Card from '@mui/material/Card';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import { styled } from '@mui/material/styles';
@@ -11,12 +10,6 @@ const BootstrapTypography = styled(Typography)({
   color: 'black',
   width: '100%',
 });
-
-const WidthGrid = styled(Grid)(({ theme }) => ({
-  [theme.breakpoints.up('xs')]: {
-    minWidth: "17rem",
-  },
-}));
 
 const BreakGrid = styled(Grid)(({ theme }) => ({
   [theme.breakpoints.up('xs')]: {
