@@ -17,7 +17,7 @@ const BootstrapButton = styled(Button)(({ theme }) => ({
     marginRight: '.25rem',
   },
   [theme.breakpoints.up('sm')]: {
-    fontSize: "2.5rem",
+    fontSize: "2rem",
     marginLeft: '1rem',
     marginRight: '1rem',
   },
