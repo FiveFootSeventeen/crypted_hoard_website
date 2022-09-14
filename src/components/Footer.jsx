@@ -5,16 +5,27 @@ import AppBar from '@mui/material/AppBar';
 import { styled } from '@mui/material/styles';
 import Toolbar from '@mui/material/Toolbar';
 
-
-const BootstrapButton = styled(Button)({
+const BootstrapButton = styled(Button)(({ theme }) => ({
   color: "white",
   boxShadow: 'none',
   textTransform: 'none',
-  fontSize: "1.5em",
   borderRadius: 0,
-  marginLeft: '1rem',
-  marginRight: '1rem',
   textDecoration: 'none',
+  [theme.breakpoints.up('xs')]: {
+    fontSize: "1.2rem",
+    marginLeft: '.25rem',
+    marginRight: '.25rem',
+  },
+  [theme.breakpoints.up('sm')]: {
+    fontSize: "2.5rem",
+    marginLeft: '1rem',
+    marginRight: '1rem',
+  },
+  [theme.breakpoints.up('md')]: {
+    fontSize: "2.5rem",
+    marginLeft: '1rem',
+    marginRight: '1rem',
+  },
   fontFamily: [
     'DungeonFont',
   ].join(','),
@@ -39,7 +50,8 @@ const BootstrapButton = styled(Button)({
     textDecoration: 'none',
     borderRadius: 0,
   },
-});
+}));
+  
 
 
 const Footer = (props) => {
@@ -50,14 +62,17 @@ const Footer = (props) => {
         position="static"
       >
         <Toolbar>
+          <BootstrapButton>
+            AdaPools
+          </BootstrapButton>
           <BootstrapButton target="_blank" href="https://twitter.com/CryptedHoard">
             Twitter
           </BootstrapButton>
           <BootstrapButton target="_blank" href="https://www.youtube.com/channel/UCYN_DyBzoGvNbJgTdnJ9A3Q">
             Youtube
           </BootstrapButton>
-          <BootstrapButton>
-            AdaPools
+          <BootstrapButton target="_blank" href="https://adalator.com/">
+            Adalator
           </BootstrapButton>
         </Toolbar>
       </AppBar>
