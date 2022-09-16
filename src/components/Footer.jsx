@@ -62,8 +62,8 @@ const Footer = (props) => {
         position="static"
       >
         <Toolbar>
-          <BootstrapButton>
-            AdaPools
+          <BootstrapButton target="_blank" href="https://cexplorer.io/pool/pool1wlq787qn983e4vyj084mvx6gtz7tl8w4kj0tlx09syst6yc53hh/about#data">
+            Pool Stats
           </BootstrapButton>
           <BootstrapButton target="_blank" href="https://twitter.com/CryptedHoard">
             Twitter
