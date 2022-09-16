@@ -173,7 +173,7 @@ export default function AncientScrolls() {
                 }}
               >
               <h2>Ancient Grimms</h2>
-              2048 AI created story scrolls based off Grimm’s fairy tales and an exclusive word from the BIP 39 word list (The word list used to generate your crypto wallet). These are available for purchase at 100 ADA each. Each story starts with a unique illustration of the AI’s interpretation of the following paragraph, a random prompt, then AI generated content and accompanying illustrations.
+              2048 AI created story scrolls based off Grimm’s fairy tales and an exclusive word from the BIP 39 word list (The word list used to generate your crypto wallet). These are available for purchase at 50 ADA each. Each story starts with a unique illustration of the AI’s interpretation of the following paragraph, a random prompt, then AI generated content and accompanying illustrations.
               </Card>
             </WidthGrid>
             <MediaGrid item
