@@ -62,7 +62,7 @@ const Footer = (props) => {
         position="static"
       >
         <Toolbar>
-          <BootstrapButton target="_blank" href="https://cexplorer.io/pool/pool1wlq787qn983e4vyj084mvx6gtz7tl8w4kj0tlx09syst6yc53hh/about#data">
+          <BootstrapButton target="_blank" href="https://cardanoscan.io/pool/77c1e3f81329e39ab09279ebb61b4858bcbf9dd5b49ebf99e58120bd">
             Pool Stats
           </BootstrapButton>
           <BootstrapButton target="_blank" href="https://twitter.com/CryptedHoard">
