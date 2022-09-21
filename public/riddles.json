@@ -1,19 +1,19 @@
 {
-  "sha256sum": "27831c29c91069009750fc28855caac36de974195b1e43fc2b431ff4fa653bd0",
-  "wallet_addr": "addr1q9j68dum5wptkwsl734hgcyrev0rktauunnhtz5yrkqjrj4928m4csls97t274fg65ukts6kqz9c760dv3u2q9wsjxaqjs9c8l",
+  "sha256sum": "3461d1eeb06c42abf8a229ef3e13afe08c8ce22035274b5ca97d3d5783da8909",
+  "wallet_addr": "addr1qxs6f7m2t2xvuelg2wgtz854f08hzduxsvev7utvxqcxvkxgvse5r4phepdrhdeals5569yumnn53rlz7mkdaa28dh6q42t9xq",
   "riddles":
     [
-      {"riddle": "I'm baby incididunt listicle lorem pitchfork. Affogato master cleanse quis mollit you probably haven't heard of them deep v ex tumblr wolf etsy taiyaki ethical.", "order": 1},
-      {"riddle": "Hammock intelligentsia seitan bushwick do stumptown meditation pok pok. Drinking vinegar pork belly hexagon bitters migas.", "order": 2},
-      {"riddle": "Quinoa fam vegan mixtape. Pug synth selvage, eiusmod kinfolk semiotics intelligentsia +1 cillum chia truffaut.", "order": 3},
-      {"riddle": "Laborum migas yes plz meh, pariatur synth lo-fi deserunt ut kinfolk YOLO. Drinking vinegar hoodie skateboard cloud bread narwhal, franzen kogi.", "order": 4},
-      {"riddle": "Vegan YOLO dreamcatcher jianbing man bun gochujang ut letterpress coloring book pour-over fit banjo id cliche enim.", "order": 5},
-      {"riddle": "Selfies single-origin coffee tilde mlkshk. Cray mumblecore franzen, hella sustainable vexillologist plaid roof party tilde minim big mood activated charcoal affogato vegan.", "order": 6},
-      {"riddle": "Occaecat sed 90's, single-origin coffee subway tile irure mumblecore pariatur reprehenderit.", "order": 7},
-      {"riddle": "Keffiyeh gastropub palo santo bruh intelligentsia est nulla aliqua minim 8-bit freegan. Keffiyeh wolf lorem tempor, incididunt heirloom flannel do dolore eiusmod XOXO authentic messenger bag dolor.", "order": 8},
-      {"riddle": "Bitters brunch wayfarers echo park, incididunt chicharrones shoreditch green juice hammock cornhole PBR&B. Deep v cold-pressed pug stumptown meggings.", "order": 9},
-      {"riddle": "Chartreuse chambray tilde, cornhole kitsch thundercats pickled cray. Hammock officia hexagon, vaporware nulla live-edge lyft yuccie nostrud vegan praxis cardigan sed magna tacos.", "order": 10},
-      {"riddle": "Kale chips taxidermy banh mi vexillologist adipisicing street art.", "order": 11},
-      {"riddle": "Aliquip wolf keffiyeh bicycle rights snackwave JOMO twee cronut elit. Exercitation gastropub cupidatat fit selfies synth church-key.", "order": 12}
+      {"riddle": "Pump it", "order": 1},
+      {"riddle": "And that's that", "order": 2},
+      {"riddle": "Flora's home", "order": 3},
+      {"riddle": "Spirit Animal", "order": 4},
+      {"riddle": "When you need something held together what do you grab?", "order": 5},
+      {"riddle": "The song of burned pizza", "order": 6},
+      {"riddle": "Alive in the land of the living", "order": 7},
+      {"riddle": "A job well done", "order": 8},
+      {"riddle": "The start of a series of divisions", "order": 9},
+      {"riddle": "You can expect an explaination to follow", "order": 10},
+      {"riddle": "Bobby the flatfoot", "order": 11},
+      {"riddle": "Pick something healthy this time", "order": 12}
     ]
 }
