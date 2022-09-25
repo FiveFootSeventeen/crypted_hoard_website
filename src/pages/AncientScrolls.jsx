@@ -10,6 +10,7 @@ import { styled } from '@mui/material/styles';
 import backgroundImg from "../static/images/stone_limited.png";
 import animatedExample from "../static/images/animated_example.webp";
 import exampleImage1 from "../static/images/example_image_1.png";
+import exampleImage2 from "../static/images/coming_soon.png";
 
 const BootstrapTypography = styled(Typography)({
   color: 'black',
@@ -219,9 +220,9 @@ export default function AncientScrolls() {
                   marginBottom: "3rem"
                 }}
               >
-                <h2>Ancient Tales</h2>
-                256 separate stories based off unique fairy and folk tales. 
-                These stories are laid out in the same way as Ancient Grimm’s, however each prompt here is taken from a unique folk story. 
+                <h2>Ancient Memes</h2>
+                256 separate stories based off unique fairy and folk tales combined with memes. 
+                These stories are laid out in the same way as Ancient Grimm’s, however each prompt here is taken from a unique folk story and combined with a meme. 
                 These NFTs can't be purchased and will only be available by solving the Crypted Hoard, distributed to those who stake to Hoard Stakepool, or purchased in secondary markets.
               </Card>
             </WidthGrid>
@@ -235,7 +236,7 @@ export default function AncientScrolls() {
               >
                 <CardMedia
                   component="img"
-                  image={exampleImage1}
+                  image={exampleImage2}
                   sx={{
                     transform: "scale(0.8)",
                     border: 7,
