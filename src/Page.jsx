@@ -1,6 +1,7 @@
 import CryptedHoard from './pages/CryptedHoard';
 import AncientScrolls from './pages/AncientScrolls';
 import AncientTomes from './pages/AncientTomes';
+import Stories from './pages/Stories';
 import Stakepool from './pages/Pool';
 import About from './pages/About';
 import React from "react";
@@ -12,29 +13,39 @@ function Page(props) {
   const TabAncientTomes = 2;
   const TabStakepool = 3;
   const TabAbout = 4;
+  const TabStories = 5;
 
-  const possibleTabs = [TabCryptedHoard, TabAncientScrolls, TabAncientTomes, TabStakepool, TabAbout];
+  const possibleTabs = [TabCryptedHoard, TabAncientScrolls, TabAncientTomes, TabStakepool, TabAbout, TabStories];
 
-  let location = useLocation();
+  const location = useLocation();
   let currTab = props.currTab;
 
+  let loc = location['pathname'].split('/');
+  if (loc[0] == '') {
+    loc = loc.splice(1, loc.length);
+  }
+
   if (currTab === -1) {
-    switch (location['pathname']) {
-      case "/":
+    switch (loc[0]) {
+      case "":
         currTab = TabCryptedHoard;
         props.setCurrTab(TabCryptedHoard);
         break;
-      case "/scrolls":
+      case "scrolls":
         currTab = TabAncientScrolls;
         props.setCurrTab(TabAncientScrolls);
         break;
-      case "/pool":
+      case "pool":
         currTab = TabStakepool;
         props.setCurrTab(TabStakepool);
         break;
-      case "/about":
+      case "about":
         currTab = TabAbout;
         props.setCurrTab(TabAbout);
+        break;
+      case "stories":
+        currTab = TabStories;
+        props.setCurrTab(TabStories);
         break;
       default:
         currTab = TabCryptedHoard;
@@ -44,8 +55,9 @@ function Page(props) {
 
   if (!possibleTabs.includes(currTab)) {
     currTab = TabCryptedHoard;
+    props.setCurrTab(TabCryptedHoard);
   }
-  
+
   return (
     <header className="App-header">
       { currTab===TabCryptedHoard &&
@@ -63,7 +75,11 @@ function Page(props) {
       { currTab===TabAbout &&
         <About/>
       }
-
+      { currTab===TabStories &&
+        <Stories
+          story={loc[1]}
+        />
+      }
     </header>
   )
 }

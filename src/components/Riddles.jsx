@@ -5,7 +5,8 @@ import Typography from '@mui/material/Typography';
 import { styled } from '@mui/material/styles';
 
 import RiddleList from './RiddleList';
-import getRiddleList from '../util/getRiddleList';
+import { getRiddleList } from '../util/getData';
+
 
 import chestClosed from '../static/images/chest_closed_pixelated.png';
 import chestOpen from '../static/images/chest_open_pixelated.png';

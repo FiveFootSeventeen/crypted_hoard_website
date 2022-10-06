@@ -11,7 +11,7 @@ import { styled } from '@mui/system';
 
 import ComputeAnswers from './ComputeAnswers';
 import bip39 from '../static/bip39/english.json';
-import getRiddleList from '../util/getRiddleList';
+import { getRiddleList } from '../util/getData';
 
 import cursorPoint from "../static/images/point.png";
 import cursorDefault from "../static/images/default.png";
