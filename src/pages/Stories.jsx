@@ -26,6 +26,22 @@ const Subtitle = styled(Typography)(({ theme }) => ({
   },
 }));
 
+const BreakTypography = styled(Typography)(({ theme }) => ({
+  textAlign: "center",
+  [theme.breakpoints.up('xs')]: {
+    padding: ".5rem",
+    fontSize: "1.2rem",
+  },
+  [theme.breakpoints.up('sm')]: {
+    padding: "1rem",
+    fontSize: "2.3rem",
+  },
+  [theme.breakpoints.up('md')]: {
+    minWidth: "40rem",
+    fontSize: "3rem",
+  },
+
+}));
 
 const BreakGrid = styled(Grid)(({ theme }) => ({
   [theme.breakpoints.up('xs')]: {
@@ -46,9 +62,10 @@ const BreakGrid = styled(Grid)(({ theme }) => ({
 
 export default function Stories(props) {
   const [dirList, setDirList] = useState();
-  const [storyJson, setStoryJson] = useState({"story": "", "prompt": ""});
+  const [storyJson, setStoryJson] = useState({"story": "", "prompt": "", "title": null});
   const [story, setStory] = useState("");
   const [prompt, setPrompt] = useState("");
+  const [title, setTitle] = useState("");
 
   useEffect(()=>{
     getStory(setStoryJson, props.story);
@@ -61,6 +78,7 @@ export default function Stories(props) {
   useEffect(()=>{
     setStory((storyJson["story"] || "Story not found"));
     setPrompt((storyJson["prompt"] || "Prompt not found"));
+    setTitle((storyJson["title"] || null ));
   },[storyJson])
 
   return (
@@ -88,6 +106,19 @@ export default function Stories(props) {
           xs={12}
           spacing={4}
         >
+            {title &&
+              <Grid item>
+                <Card
+                  class="rpgui-container framed-custom-3"
+                >
+                  <BreakTypography 
+                    variant="poolDesc"
+                  >
+                    {title}
+                  </BreakTypography>
+                </Card>
+              </Grid>
+            }
           <Grid item>
             <Card
               class="rpgui-container framed-custom-2"

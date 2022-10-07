@@ -4,6 +4,9 @@ import sys
 
 story_dict = {}
 
+print("Title: ")
+title = sys.stdin.read()
+
 print("Prompt: ")
 prompt = sys.stdin.read()
 
@@ -12,7 +15,9 @@ story = sys.stdin.read()
 
 prompt = prompt.replace("\u2019", "'")
 story = story.replace("\u2019", "'")
+title = title.replace("\u2019", "'")
 
+story_dict.update({"title": title})
 story_dict.update({"prompt": prompt})
 story_dict.update({"story": story})
 
