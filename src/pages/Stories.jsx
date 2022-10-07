@@ -28,15 +28,17 @@ const Subtitle = styled(Typography)(({ theme }) => ({
 
 
 const BreakGrid = styled(Grid)(({ theme }) => ({
-  fontSize: "1.5rem",
   [theme.breakpoints.up('xs')]: {
-    margin: "0 5vw 0 5vw"
+    padding: ".5rem",
+    fontSize: "1.2rem",
   },
   [theme.breakpoints.up('sm')]: {
-    margin: "0 2vw 0 2vw"
+    padding: "1rem",
+    fontSize: "1.5rem",
   },
   [theme.breakpoints.up('md')]: {
-    minWidth: "40rem"
+    minWidth: "40rem",
+    fontSize: "1.5rem",
   },
 
 }));
