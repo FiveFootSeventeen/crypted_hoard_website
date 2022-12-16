@@ -1,0 +1,33 @@
+{
+  "721": {
+    "cd25c2a6b2d0f6d0b00b8bdc1dfd9c59f6751678cbcf433bb02d95c6": {
+      "<asset_name>": {
+        "image": "<ipfs_link>",
+        "files": [
+          {
+            "mediaType": "<mime_type>",
+            "src": "<ipfs_link>",
+            "name": "Ancient Scroll 964F501ED9"
+          },
+          {
+            "mediaType": "<mime_type_subfile_1>",
+            "src": "<ipfs_link_subfile_1>",
+            "name": "Ancient Scroll 964F501ED9 Expanded"
+          }
+        ],
+        "name": "Ancient Scroll 964F501ED9",
+        "Artist Inspiration": "Watteau",
+        "Mood": "Surprised",
+        "Palette 1": "Colorful",
+        "Scroll Hash": "964F501ED9",
+        "Story Type": "Classic",
+        "Spices": [
+          "Goblin"
+        ],
+        "Points": 1687,
+        "Website": "https://cryptedhoard.com"
+      }
+    },
+    "version": "1.0"
+  }
+}

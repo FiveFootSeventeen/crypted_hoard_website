@@ -9,8 +9,6 @@ import { styled } from '@mui/material/styles';
 
 import backgroundImg from "../static/images/stone_limited.png";
 import animatedExample from "../static/images/animated_example.webp";
-import exampleImage1 from "../static/images/example_image_1.png";
-import exampleImage2 from "../static/images/coming_soon.png";
 
 const BootstrapTypography = styled(Typography)({
   color: 'black',
@@ -117,8 +115,21 @@ export default function AncientScrolls() {
             <Card
               class="rpgui-container framed-custom-2"
             >
-              The Ancient Scrolls are pixel art NFT stories on unrolling scrolls!
-              They consist of two separate AI generated story collections: Ancient Grimms and Ancient Tales.
+              <h2>The Ancient Scrolls are pixel art NFT stories on unrolling scrolls!</h2>
+              - Each scroll contains a story written by an AI. 
+              <br/>
+              - Each story is generated from a base prompt which can be from one of the following themes, in order or rarity: Fairy Tale, Science Fiction, Classic Novels, Myths and Legends, Sherlock Holmes, Jane Austen and Charles Hoskinson.
+              <br/>
+              - To make stories more interesting spices are thrown in, such as goblins, unicorns, hipsters, ninjas, and robots. These spices can be seen in the illuminated illustration at the start of each paragraph.
+              <br/>
+              - Stories are illustrated with one illustration per paragraph, 3-5 illustrations total. These illustrations are also done by an AI. For each paragraph 6 illustrations are created and the best fitting one is hand selected.
+              <br/>
+              - A score at the start of the story gives an idea of how rare that particular story is. Scores are given based on length, story type, number of illustrations, and several other factors.
+              <br/>
+              <br/>
+              Policy ID:
+              <br/>
+              cd25c2a6b2d0f6d0b00b8bdc1dfd9c59f6751678cbcf433bb02d95c6
             </Card>
           </BreakGrid>
           <BreakGrid
@@ -147,102 +158,6 @@ export default function AncientScrolls() {
                     borderColor: "black"
                   }}
                   alt="Animated Ancient Grimm NFT"
-                />
-              </Card>
-            </MediaGrid>
-          </BreakGrid>
-          <BreakGrid
-            container
-            item
-            nowrap
-            direction="row"
-            justifyContent="space-evenly"
-            alignItems="center"
-            style={{marginTop: "2rem"}}
-            spacing={1}
-          >
-            <WidthGrid item
-              md={4}
-              xs={12}
-            >
-
-              <Card
-                class="rpgui-container framed-custom-2"
-                style={{
-                  marginTop: "3rem",
-                  marginBottom: "3rem"
-                }}
-              >
-              <h2>Ancient Grimms</h2>
-              2048 AI created story scrolls based off Grimm’s fairy tales and an exclusive word from the BIP 39 word list (The word list used to generate your crypto wallet). These are available for purchase at 50 ADA each. Each story starts with a unique illustration of the AI’s interpretation of the following paragraph, a random prompt, then AI generated content and accompanying illustrations.
-              </Card>
-            </WidthGrid>
-            <MediaGrid item
-              md={4}
-              xs={12}
-            >
-
-              <Card
-                class="rpgui-container framed-custom-3"
-              >
-                <CardMedia
-                  component="img"
-                  image={exampleImage1}
-                  sx={{
-                    transform: "scale(0.8)",
-                    border: 7,
-                    borderColor: "black"
-                  }}
-                  alt="Ancient Grimm NFT Example 1"
-                />
-              </Card>
-            </MediaGrid>
-          </BreakGrid>
-          <BreakGrid
-            container
-            item
-            nowrap
-            direction="row-reverse"
-            justifyContent="space-evenly"
-            alignItems="center"
-            style={{marginTop: "2rem"}}
-            spacing={1}
-          >
-            <WidthGrid item
-              md={4}
-              xs={12}
-            >
-
-              <Card
-                class="rpgui-container framed-custom-2"
-                style={{
-                  marginTop: "3rem",
-                  marginBottom: "3rem"
-                }}
-              >
-                <h2>Ancient Memes</h2>
-                256 separate stories based off unique fairy and folk tales combined with memes. 
-                These stories are laid out in the same way as Ancient Grimm’s, however each prompt here is taken from a unique folk story and combined with a meme. 
-                These NFTs can't be purchased and will only be available by solving the Crypted Hoard, distributed to those who stake to Hoard Stakepool, or purchased in secondary markets.
-              </Card>
-            </WidthGrid>
-            <MediaGrid item
-              md={4}
-              xs={12}
-            >
-
-              <Card
-                class="rpgui-container framed-custom-3"
-              >
-                <CardMedia
-                  component="img"
-                  image={exampleImage2}
-                  sx={{
-                    transform: "scale(0.8)",
-                    border: 7,
-                    borderColor: "black"
-                  }}
-                  alt="Ancient Tale NFT Example 1"
                 />
               </Card>
             </MediaGrid>
@@ -318,7 +233,7 @@ export default function AncientScrolls() {
                 maxWidth: "30rem",
               }}
             >
-              <a href="http://www.google.com" target="_blank" rel="noreferrer">
+              <a href="https://pay.nmkr.io/?p=d0579469e8ce40b08d5da5dd25bd3e8b&c=1" target="_blank" rel="noreferrer">
                 <img 
                   src={mintButton}
                   style={{
