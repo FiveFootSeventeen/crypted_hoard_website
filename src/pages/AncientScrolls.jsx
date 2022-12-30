@@ -125,11 +125,6 @@ export default function AncientScrolls() {
               - Stories are illustrated with one illustration per paragraph, 3-5 illustrations total. These illustrations are also done by an AI. For each paragraph 6 illustrations are created and the best fitting one is hand selected.
               <br/>
               - A score at the start of the story gives an idea of how rare that particular story is. Scores are given based on length, story type, number of illustrations, and several other factors.
-              <br/>
-              <br/>
-              Policy ID:
-              <br/>
-              cd25c2a6b2d0f6d0b00b8bdc1dfd9c59f6751678cbcf433bb02d95c6
             </Card>
           </BreakGrid>
           <BreakGrid
