@@ -210,34 +210,10 @@ export default function AncientScrolls() {
             <Card
               class="rpgui-container framed-custom-2"
             >
+              The scrolls are only available through staking to HOARD pool. As the pool grows more chances to win will be offered to delegates.
+              <br/>
               Have fun, and read the Ancient Scrolls!
             </Card>
-            <button 
-              onMouseEnter={onMouseEnter}
-              onMouseLeave={onMouseLeave}
-              onMouseDown={onMouseDown}
-              onMouseUp={onMouseUp}
-              style={{
-                marginTop: "2rem",
-                backgroundColor: "transparent",
-                backgroundRepeat: "no-repeat",
-                border: "none",
-                overflow: "hidden",
-                outline: "none",
-                width: "90%",
-                maxWidth: "30rem",
-              }}
-            >
-              <a href="https://pay.nmkr.io/?p=d0579469e8ce40b08d5da5dd25bd3e8b&c=1" target="_blank" rel="noreferrer">
-                <img 
-                  src={mintButton}
-                  style={{
-                    width: "100%"
-                  }}
-                  alt="Ancient Scrolls Mint Button"
-                />
-              </a>
-            </button>
           </BreakGrid>
         </Grid>
 
