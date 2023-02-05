@@ -1,31 +1,31 @@
 {
-    "info": {
-        "url_png_icon_64x64": "https://cryptedhoard.com/images/hoard_logo_64_64.png",
-        "url_png_logo": "https://cryptedhoard.com/images/hoard_logo.png",
-        "location": "Tennessee, USA",
-        "social": {
-            "twitter_handle": "CryptedHoard",
-            "telegram_handle": "",
-            "facebook_handle": "",
-            "youtube_handle": "channel/UCYN_DyBzoGvNbJgTdnJ9A3Q",
-            "twitch_handle": "",
-            "discord_handle": "",
-            "github_handle": "",
-            "email": "anodos@cryptedhoard.com",
-            "ada_handle": "$crypted_hoard"
-        },
-        "company": {
-            "name": "The Crypted Hoard",
-            "addr": "",
-            "city": "",
-            "country": "USA",
-            "company_id": "",
-            "vat_id": ""
-        },
-        "about": {
-            "me": "I'm a software developer that likes to create novel applications to benefit the Cardano ecosystem. I also run a solid stakepool with beefy hardware specs that will keep this pool relevant far into the future. I plan to be around for a while so you can stake your ADA investment to HOARD and rest assured that it will continue to grow with minimal stewardship.",
-            "server": "Bare metal enterprise-grade blade servers. Each node has its own dedicated server. Server specs: 8 Core | 64GB ECC Memory | 8TB Raid 1 | Spare hot swappable blades. Relays are secured behind a VPN, a dedicated UPS keeps the servers and networking equipment powered in the case of an outage, and a failover router and redundant internet connections keep the pool online at all times.",
-            "company": ""
-        }
-    }
+ "info": {
+ "url_png_icon_64x64": "https://cryptedhoard.com/images/hoard_logo_64_64.png",
+ "url_png_logo": "https://cryptedhoard.com/images/banner_logo_6.png",
+ "location": "Tennessee, USA",
+ "social": {
+ "twitter_handle": "CryptedHoard",
+ "telegram_handle": "",
+ "facebook_handle": "",
+ "youtube_handle": "channel/UCYN_DyBzoGvNbJgTdnJ9A3Q",
+ "twitch_handle": "",
+ "discord_handle": "",
+ "github_handle": "",
+ "email": "anodos@cryptedhoard.com",
+ "ada_handle": "$crypted_hoard"
+ },
+ "company": {
+ "name": "The Crypted Hoard",
+ "addr": "",
+ "city": "",
+ "country": "USA",
+ "company_id": "",
+ "vat_id": ""
+ },
+ "about": {
+ "me": "Im a software developer that likes to create novel applications to benefit the Cardano ecosystem. I also run a solid stakepool with beefy hardware specs that will keep this pool relevant far into the future. I plan to be around for a while so you can stake your ADA investment to HOARD and rest assured that it will continue to grow with minimal stewardship.",
+ "server": "Bare metal enterprise-grade blade servers. Each node has its own dedicated server. Server specs: 8 Core | 64GB ECC Memory | 8TB Raid 1 | Spare hot swappable blades. Relays are secured behind a VPN, a dedicated UPS keeps the servers and networking equipment powered in the case of an outage, and a failover router and redundant internet connections keep the pool online at all times.",
+ "company": ""
+ }
+ }
 }
