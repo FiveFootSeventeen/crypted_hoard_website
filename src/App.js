@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 import CssBaseline from '@mui/material/CssBaseline';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 
 import DungeonFont from './static/fonts/DungeonFont.ttf';
 import Adventurer from './static/fonts/Adventurer.ttf';
@@ -12,6 +12,7 @@ import "./index.css";
 import "./index.js";
 import './App.css';
 import './rpg_ui/rpgui.css';
+
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import Page from './Page';
@@ -59,6 +60,22 @@ const theme = createTheme({
 function App() {
   const [currTab, setCurrTab] = useState(-1);
 
+  const TabCryptedHoard = 0;
+  const TabAncientScrolls = 1;
+  const TabAncientTomes = 2;
+  const TabStakepool = 3;
+  const TabAbout = 4;
+  const TabStories = 5;
+
+  const tabLst = [
+    {"name": "Hoard",  "number": TabCryptedHoard},
+    {"name": "Scrolls", "number": TabAncientScrolls},
+    //{"name": "Tomes", "number": TabAncientTomes},
+    {"name": "Pool", "number": TabStakepool},
+    {"name": "About", "number": TabAbout},
+    //{"name": "Stories", "number": TabStories}
+  ];
+
   useEffect(() => {
     const script = document.createElement('script');
 
@@ -70,22 +87,25 @@ function App() {
 
 
   return (
-    <Router>
+    <BrowserRouter>
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <div className="App-body rpgui-content" >
           <NavBar
             setCurrTab={setCurrTab}
             currTab={currTab}
+            tabLst={tabLst}
           />
-          <Page
-            setCurrTab={setCurrTab}
-            currTab={currTab}
-          />
+          <header className="App-header">
+            <Page
+              setCurrTab={setCurrTab}
+              currTab={currTab}
+            />
+          </header>
           <Footer />
         </div>
       </ThemeProvider>
-    </Router>
+    </BrowserRouter>
   );
 }
 

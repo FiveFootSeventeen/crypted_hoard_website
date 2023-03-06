@@ -1,11 +1,13 @@
+import React from "react";
+
 import CryptedHoard from './pages/CryptedHoard';
 import AncientScrolls from './pages/AncientScrolls';
 import AncientTomes from './pages/AncientTomes';
 import Stories from './pages/Stories';
 import Winners from './pages/Winners';
 import Stakepool from './pages/Pool';
+import Pool from './pages/Pool';
 import About from './pages/About';
-import React from "react";
 import { useLocation } from 'react-router-dom';
 
 function Page(props) {
@@ -38,6 +40,8 @@ function Page(props) {
         props.setCurrTab(TabAncientScrolls);
         break;
       case "pool":
+      case "delegates":
+      case "delegate":
         currTab = TabStakepool;
         props.setCurrTab(TabStakepool);
         break;
@@ -65,7 +69,7 @@ function Page(props) {
   }
 
   return (
-    <header className="App-header">
+    <React.Fragment>
       { currTab===TabCryptedHoard &&
         <CryptedHoard/>
       }
@@ -76,7 +80,9 @@ function Page(props) {
         <AncientTomes/>
       }
       { currTab===TabStakepool &&
-        <Stakepool/>
+        <Pool
+          loc={loc}
+        />
       }
       { currTab===TabAbout &&
         <About/>
@@ -91,7 +97,7 @@ function Page(props) {
           epoch={loc[1]}
         />
       }
-    </header>
+    </React.Fragment>
   )
 }
 
