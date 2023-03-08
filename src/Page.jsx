@@ -2,6 +2,7 @@ import CryptedHoard from './pages/CryptedHoard';
 import AncientScrolls from './pages/AncientScrolls';
 import AncientTomes from './pages/AncientTomes';
 import Stories from './pages/Stories';
+import Winners from './pages/Winners';
 import Stakepool from './pages/Pool';
 import About from './pages/About';
 import React from "react";
@@ -14,8 +15,9 @@ function Page(props) {
   const TabStakepool = 3;
   const TabAbout = 4;
   const TabStories = 5;
+  const TabWinners = 6;
 
-  const possibleTabs = [TabCryptedHoard, TabAncientScrolls, TabAncientTomes, TabStakepool, TabAbout, TabStories];
+  const possibleTabs = [TabCryptedHoard, TabAncientScrolls, TabAncientTomes, TabStakepool, TabAbout, TabStories, TabWinners];
 
   const location = useLocation();
   let currTab = props.currTab;
@@ -46,6 +48,10 @@ function Page(props) {
       case "stories":
         currTab = TabStories;
         props.setCurrTab(TabStories);
+        break;
+      case "winners":
+        currTab = TabWinners;
+        props.setCurrTab(TabWinners);
         break;
       default:
         currTab = TabCryptedHoard;
@@ -78,6 +84,11 @@ function Page(props) {
       { currTab===TabStories &&
         <Stories
           story={loc[1]}
+        />
+      }
+      { currTab===TabWinners &&
+        <Winners
+          epoch={loc[1]}
         />
       }
     </header>

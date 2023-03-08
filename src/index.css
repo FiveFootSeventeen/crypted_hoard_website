@@ -21,3 +21,8 @@ code {
   font-family: 'Adventurer';
   src: local('Adventurer'), url(./static/fonts/Adventurer.ttf) format('truetype')
 }
+
+@font-face {
+  font-family: 'Antiquity';
+  src: local('Antiquity'), url(./static/fonts/antiquity-print.ttf) format('truetype')
+}

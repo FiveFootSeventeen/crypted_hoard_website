@@ -51,3 +51,21 @@ export function getStory(setData, storyHash) {
         setData(dirListing)
     });
 }
+
+export function getWinners(setData, epoch) {
+    fetch(
+        `/epoch_${epoch}_winners.json`,
+        {
+            headers : { 
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+            }
+        }
+    )
+    .then( (response) => {
+        return response.json();
+    })
+    .then( (dirListing) => {
+        setData(dirListing)
+    });
+}
