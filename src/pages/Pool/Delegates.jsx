@@ -14,6 +14,8 @@ import loyaltyPicture from "../../static/images/test_loyalty_picture.png"
 import loyaltyPicture2 from "../../static/images/test_loyalty_picture_2.png"
 import loyaltyPicture3 from "../../static/images/test_loyalty_picture_3.png"
 
+import { getDelegates } from '../../util/getData';
+
 const BootstrapTypography = styled(Typography)({
   color: 'black',
   width: '100%',
@@ -34,6 +36,7 @@ const BreakGrid = styled(Grid)(({ theme }) => ({
 
 export default function Delegates() {
   const [characterLst, setCharacterLst] = useState([]);
+  const [delegateLst, setDelegateLst] = useState([]);
 
   const testDelegates = [
     {"name": "Kargetrude Blazingshoulder", "image": loyaltyPicture},
@@ -41,18 +44,17 @@ export default function Delegates() {
     {"name": "Dhokhosli Barbeddelver", "image": loyaltyPicture3}
   ]
 
-  const getDelegates = () => {
-      return testDelegates;
-  }
+  useEffect(() => {
+    delegateLst.map((delegate) =>
+      <CharacterCard
+        name={delegate.name}
+        characterImg={delegate.image}
+      />
+    )
+  }, [delegateLst]);
 
   useEffect(() => {
-    setCharacterLst(getDelegates().map((delegate) =>
-        <CharacterCard
-          name={delegate.name}
-          characterImg={delegate.image}
-        />
-      )
-    )
+    getDelegates(setDelegateLst)
   }, []);
 
 

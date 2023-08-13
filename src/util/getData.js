@@ -69,3 +69,15 @@ export function getWinners(setData, epoch) {
         setData(dirListing)
     });
 }
+
+export function getDelegates(setData) {
+    fetch(
+        `http://127.0.0.1:6543/delegates`
+    )
+    .then( (response) => {
+        return response.json();
+    })
+    .then( (delegates) => {
+        setData(delegates)
+    });
+}

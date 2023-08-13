@@ -24,6 +24,7 @@ export default function CharacterCard(props) {
             <Grid item
                 md={3}
                 xs={12}
+                order={{ xs: 2, s: 1, md: 1, l: 1, xl: 1 }}
                 sx={{
                     margin: "0 2.5rem 0 2.5rem"
                 }}
@@ -42,6 +43,7 @@ export default function CharacterCard(props) {
             <Grid item
                 md={4}
                 xs={12}
+                order={{ xs: 1 }}
                 sx={{
                     margin: "0 2.5rem 0 2.5rem"
                 }}
