@@ -1,7 +1,7 @@
 {
   "name":"Crypted Hoard Stakepool",
   "ticker":"HOARD",
-  "description":"Resilient bare metal stakepool dedicated to network decentralization and growing the Cardano community.",
+  "description":"A Resilient stakepool running self-hosted nodes, dedicated to network decentralization and growing the Cardano community.",
   "homepage":"https://cryptedhoard.com/pool",
   "extended":"https://cryptedhoard.com/extended_metadata.json"
 }
