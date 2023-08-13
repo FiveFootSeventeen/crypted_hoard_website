@@ -54,22 +54,14 @@ export default function Hardware() {
             <b>Hardware</b>
             </Subtitle1>
             <br/>
-            <Subtitle2>Redundant:</Subtitle2>
-            - Internet Connection
-            <br/>
-            - Server Power Supplies
-            <br/>
-            - Storage
-            <br/>
-            <br/>
             <Subtitle2>Enterprise-grade blade servers:</Subtitle2>
-            - Bare Metal
+            - Self Hosted
             <br/>
-            - 8 Cores
+            - 2 x 8 Cores
             <br/>
-            - 64GB ECC Memory
+            - 128GB ECC Memory
             <br/>
-            - 8TB Redundant HDDs (Raid 1)
+            - Gigabit Internet
             <br/>
             - UPS powering all server blades
             <br/>

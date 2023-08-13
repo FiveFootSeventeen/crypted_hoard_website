@@ -108,8 +108,8 @@ export default function Pool() {
             alignItems="top"
           >
             <Reason
-              text="Bare metal nodes with redundant drives and hardware specs better than recommended values."
-              subtitle="Bare Metal"
+              text="Resilient stakepool running self-hosted nodes and hardware specs better than recommended values."
+              subtitle="Self Hosted"
               image="/images/pool/ship_1_sm.png"
             />
             <Reason
@@ -133,12 +133,7 @@ export default function Pool() {
               image="/images/pool/pixel_sea_monster_sm.png"
             />
             <Reason
-              text="25% of Horde pool rewards are donated to reliable charities to help impoverished people."
-              subtitle="Charity"
-              image="/images/pool/pixel_life_preserver_sm.png"
-            />
-            <Reason
-              text="A dedicated machine is kept offline and used to sign all transactions, all pool keys are kept in cold storage on USB drives."
+              text="A dedicated machine is kept offline and used to sign all transactions, cold pool keys are kept in cold storage on USB drives."
               subtitle="Cold Storage"
               image="/images/pool/pixel_desert_island_sm.png"
             />
